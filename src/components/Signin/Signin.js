@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class Signin extends Component {
+export default class Signin extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -9,11 +9,11 @@ class Signin extends Component {
       signInPassword: ''
     }
   }
-  onEmailChange = (event) => {
+  onEmailChange = event => {
     this.setState({signInEmail: event.target.value})
   }
 
-  onPasswordChange = (event) => {
+  onPasswordChange = event => {
     this.setState({signInPassword: event.target.value})
   }
 
@@ -74,6 +74,3 @@ class Signin extends Component {
   );
   }
 }
-
-
-export default Signin;
